@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'https://flow.madras.p-e.kr'; // 백엔드 주소
+const API_BASE = 'https://flow.madras.p-e.kr/api/people'; // 백엔드 주소
 
 export const searchPeople = async (query) => {
     const res = await axios.get(`${API_BASE}/search`, {
